@@ -26,12 +26,12 @@ var {value, bytesRead} = readProperty(buffer, offset);
 var {value, bytesRead} = readStruct(buffer, offset);
 ```
 
-* `buffer`: A node buffer object containing the data to be read
-* `offset`: An integer indicating where to start reading
+* `buffer`: A node buffer object containing the binary data to be read
+* `offset`: An integer indicating where in the buffer to start reading
     * For `readProperty()`, this should be 4 bytes before a valid property string
     * For `readStruct()`, this should be 4 bytes before a struct key string
 * `value`: A JSON-compatible value that closely represents the struct/property
-* `bytesRead`: An integer equaling to the number of bytes read from the buffer to get the value
+* `bytesRead`: An integer equaling to the byte size of the struct/property in the buffer
 
 # Examples
 ```javascript
