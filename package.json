@@ -1,0 +1,10 @@
+{
+    "name": "ark-save-reader",
+    "version": "1.0.0",
+    "description": "A node.js script for reading ARK: Survival Evolved save files",
+    "main": "ArkSaveReader.js",
+    "type": "module",
+    "bin": "demo.js",
+    "author": "https://github.com/Wupb",
+    "license": "MIT"
+}
